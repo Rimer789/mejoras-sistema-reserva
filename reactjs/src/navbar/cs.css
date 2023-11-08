@@ -1,0 +1,50 @@
+.menu {
+  background-color: rgba(51, 51, 51, 0.8); 
+  padding: 10px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    background-color: rgba(51, 51, 51, 0.8); 
+    padding: 10px;
+    color: #fff;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu.active ul {
+    display: flex;
+    flex-direction: column;
+ 
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}

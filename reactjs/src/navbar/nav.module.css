@@ -1,0 +1,36 @@
+.menu {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}
